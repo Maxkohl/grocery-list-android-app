@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class AddItemsActivity extends AppCompatActivity {
 
-    public static final String EXTRA_REPLY="com.example.android.grocerylistapp.extra.REPLY";
+    public static final String EXTRA_REPLY = "com.example.android.grocerylistapp.extra.REPLY";
+    private static final String LOG_TAG = AddItemsActivity.class.getSimpleName();
 
 
     @Override
@@ -26,6 +28,7 @@ public class AddItemsActivity extends AppCompatActivity {
 
         replyIntent.putExtra(EXTRA_REPLY, itemName);
         setResult(RESULT_OK, replyIntent);
+        Log.d(LOG_TAG, itemName);
         finish();
 
 

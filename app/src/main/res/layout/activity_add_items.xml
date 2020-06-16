@@ -14,6 +14,7 @@
         android:layout_marginLeft="38dp"
         android:layout_marginTop="60dp"
         android:text="Apples"
+        android:onClick="returnItem"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bananas"
+        android:onClick="returnItem"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_item3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,6 +36,7 @@
         android:layout_marginEnd="26dp"
         android:layout_marginRight="26dp"
         android:text="Eggs"
+        android:onClick="returnItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,6 +47,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginLeft="37dp"
         android:text="Bread"
+        android:onClick="returnItem"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_item5"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="Butter"
+        android:onClick="returnItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_item2" />
@@ -65,6 +70,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:text="Chicken"
+        android:onClick="returnItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_item5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
