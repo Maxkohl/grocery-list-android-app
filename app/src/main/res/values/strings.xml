@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Grocery List App</string>
     <string name="starting_prompt">Click Add Item to begin</string>
+    <string name="add_items_label">Add Items</string>
 </resources>

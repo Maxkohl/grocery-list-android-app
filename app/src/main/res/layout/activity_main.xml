@@ -85,6 +85,7 @@
         android:layout_marginBottom="86dp"
         android:text="Add Item"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="launchAddItemsActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
