@@ -12,13 +12,16 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     public static final int TEXT_REQUEST = 1;
 
-    private ArrayList<String> mItemNames = new ArrayList<>();
+
+    TextView startingPrompt;
+    public ArrayList<String> mItemNames = new ArrayList<>();
 
     
 
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        startingPrompt = findViewById(R.id.start_prompt);
 
         initRecyclerView();
 
@@ -54,9 +58,13 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == TEXT_REQUEST) {
             if (resultCode == RESULT_OK) {
                 String reply = data.getStringExtra(AddItemsActivity.EXTRA_REPLY);
-                item1.setText(reply);
-                item1.setVisibility(View.VISIBLE);
+                mItemNames.add(reply);
+                initRecyclerView();
             }
+        }
+
+        if (mItemNames.size() > 0) {
+            startingPrompt.setText(R.string.your_list);
         }
     }
 }

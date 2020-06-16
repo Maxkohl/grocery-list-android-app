@@ -8,7 +8,7 @@
     android:id="@+id/parent_layout">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/start_prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"

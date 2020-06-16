@@ -3,4 +3,5 @@
     <string name="starting_prompt">Click Add Item to begin</string>
     <string name="add_items_label">Add Items</string>
     <string name="add_item_btn">Add Item</string>
+    <string name="your_list">Your Grocery List: </string>
 </resources>
